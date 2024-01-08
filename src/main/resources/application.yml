@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transaction_new  # URL JDBC pour PostgreSQL
+    username: postgres  # Votre nom d'utilisateur PostgreSQL
+    password: oday2001  # Votre mot de passe PostgreSQL
+    driver-class-name: org.postgresql.Driver  # Classe de pilote PostgreSQL
+  jpa:
+    hibernate:
+      ddl-auto: update # Cette option crée automatiquement les tables au démarrage
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisPG10Dialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jackdamian422@gmail.com
+    password: qoqw qlfo ktyl evpb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  port: 3002
